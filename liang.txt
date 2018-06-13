@@ -4,3 +4,11 @@ int a = b;
 b = 4;
 print(b)
 
+readme.md文件下载下来
+ git pull --rebase origin master
+
+ git push origin master 时报错  error: RPC failed; curl 52 Empty reply from server
+ 
+ 在config里面加入
+	[https]
+	postBuffer = 524288000
