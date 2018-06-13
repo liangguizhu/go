@@ -1,1 +1,6 @@
 dhkbsadblj是
+
+int a = b;
+b = 4;
+print(b)
+
