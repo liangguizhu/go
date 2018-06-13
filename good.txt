@@ -8,3 +8,8 @@
 [user]
 	name = liang
 	email = 524253534@qq.com
+	ignorecase = true
+[user]
+	name = liang
+	email = 524253534@qq.com
+
