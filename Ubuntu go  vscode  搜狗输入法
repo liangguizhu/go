@@ -1,0 +1,48 @@
+ubuntn的安装
+  1:制作软件 rufus
+  2：ubuntn16.04.desktop.amd.64.iso
+  建议选择英文
+ 
+go环境变量（转自：https://studygolang.com/articles/13586#reply0）
+  1：安装
+    下载go语言安装包：
+    wget https://storage.googleapis.com/golang/go1.10.2.linux-amd64.tar.gz
+    解压缩文件：sudo tar -C /usr/local-xzf go1.10.2.linux-amd64.tar.gz
+    创建go语言工作目录：mkdir $HOME/go
+  2：配置环境变量
+    切换到当前用户根目录下 输入命令 gedit .bashrc 或者 vi .bashrc
+    然后将：
+      export GOROOT=/usr/local/go
+      export GOPATH=$HOME/go
+      export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+    追加到最后面。
+  3：测试你的Go是否安装成功
+    go version
+    
+visual-studio-code安装
+  1：官网下载https://code.visualstudio.com/
+  2：sudo dpkg -i vscode_1_10_amd.64.deb
+  3: sudo apt-get install -f
+  
+vscode安装go插件
+  1：需要先安装git
+  2：安装go
+  3：10个插件安装
+    1：vscode会自动提示需要安装插件，一般自动安装只能成功4个
+    2：失败的插件
+       在https://www.golangtc.com/download/package上找到第三方插件，下载xx.deb安装包，
+       解压到GOPATH目录下的src目录下，
+          tar -xzf github.com.sqs.goreturns.tar.gz -C /home/dan/go/src
+          如果有多重目录，不用担心后面的解压会把前面的覆盖掉，会自动进入相应的父目录下
+       然后在GOPATH目录下的bin目录里执行命令：
+        go install sourcegraph.com/sqs/goreturns（路径地址是src目录里的地址）
+  
+  linux搜狗输入法的安装
+    sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
+    sudo apt-get install -f
+    sudo reboot 
+    参考：https://blog.csdn.net/areigninhell/article/details/79696751
+  
+
+
+ 
